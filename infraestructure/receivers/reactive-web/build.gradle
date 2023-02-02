@@ -1,0 +1,7 @@
+dependencies {
+    implementation project(':domain-usecase')
+    implementation project(':domain-model')
+
+    implementation('org.springframework.boot:spring-boot-starter-webflux')
+    implementation 'org.reactivecommons.utils:object-mapper:0.1.0'
+}

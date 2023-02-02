@@ -1,0 +1,22 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+
+	implementation project(":domain-usecase")
+	implementation project(":domain-model")
+	implementation project(":receivers-reactive-web")
+	implementation project(":adapters-jpa-repository")
+
+	implementation('com.rabbitmq:amqp-client')
+
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+	implementation 'org.reactivecommons:async-commons:1.0.0-beta1'
+	implementation 'org.reactivecommons:async-commons-starter:1.0.0-beta1'
+
+	implementation 'org.reactivecommons.utils:object-mapper:0.1.0'
+	implementation('org.springframework.boot:spring-boot-devtools')
+}

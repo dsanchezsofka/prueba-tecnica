@@ -1,0 +1,16 @@
+buildscript {
+    ext {
+        springBootVersion = '2.3.12.RELEASE'
+        springCloudVersion = 'Hoxton.SR11'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply from: './main.gradle'
+
+
